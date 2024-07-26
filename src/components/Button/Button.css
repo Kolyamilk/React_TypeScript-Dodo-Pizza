@@ -1,0 +1,29 @@
+button {
+    border: none;
+    border-radius: 9999px;
+    cursor: pointer;
+}
+
+.small {
+    height: 32px;
+    padding: 8px 16px;
+    font-size: 14px;
+    line-height: 16px;
+}
+
+.medium {
+    height: 40px;
+    padding: 8px 20px;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.orange {
+    background-color: rgb(255, 105, 0);
+    color: rgb(255, 255, 255);
+}
+
+.gray {
+    background-color: rgb(243, 243, 247);
+    color: rgb(92, 99, 112);
+}

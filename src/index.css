@@ -1,0 +1,38 @@
+:root {
+    font-family: Dodo, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+
+    color: rgba(255, 255, 255, 0.87);
+    color: #000000;
+}
+
+a {
+    font-weight: 650;
+    color: #000000;
+    text-decoration: inherit;
+    transition: all 0.3s;
+}
+
+a:hover {
+    color: rgb(255, 105, 0);
+}
+
+li {
+    list-style-type: none;
+}
+
+.dodoColor {
+    color: rgb(255, 105, 0);
+}
+
+.fz-14 {
+    font-size: 14px;
+}
+
+.fz-18 {
+    font-size: 18px;
+
+}
+
+.flex {
+    display: flex;
+}
