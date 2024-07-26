@@ -1,6 +1,88 @@
-.modal {
+.modal-fade {
     position: fixed;
-    width: 500px;
-    background-color: aqua;
+    background-color: black;
+    opacity: 60%;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+}
 
+.login {
+
+    position: absolute;
+
+
+    display: flex;
+    align-items: start;
+    flex-direction: column;
+    width: 350px;
+    padding: 32px;
+    border-radius: 20px;
+    background-color: rgb(255, 255, 255);
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+h1 {
+    margin: 0px 0px 8px;
+}
+
+.title {
+    margin: 0px 0px 8px;
+    color: rgb(0, 0, 0);
+    font-size: 36px;
+    font-weight: 500;
+    line-height: 36px;
+}
+
+.description {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 20px;
+    color: rgb(92, 99, 112);
+    margin: 0px 0px 24px;
+}
+
+.close {
+    position: absolute;
+    top: 13px;
+    right: -38px;
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out;
+}
+
+.close:hover {
+    transform: rotate(190deg);
+}
+
+.lg label {
+    margin-bottom: 20px;
+}
+
+.input-container {
+    width: 320px;
+    margin-top: 10px;
+
+}
+
+.input-container input {
+    width: 100%;
+    text-align: left;
+    height: 48px;
+    padding: 0px 16px;
+    border-radius: 12px;
+    border: 1px solid rgb(226, 226, 233);
+    color: rgb(0, 0, 0);
+}
+
+.lg {
+    margin-bottom: 40px;
+}
+
+.legal {
+    font-weight: 600;
+    color: rgb(255, 100, 0);
 }

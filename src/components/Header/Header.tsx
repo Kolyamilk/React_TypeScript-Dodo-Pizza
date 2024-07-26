@@ -1,12 +1,12 @@
-
+import { useState } from 'react'
 import Button from '../Button/Button'
 import Modal from '../Modal/Modal'
 import './Header.css'
 const Header = () => {
+
     return (
-        
         <div className='header'>
-            
+
             <div className='header-nav'>
                 <nav className='header-nav__main'>
                     <li className="nav-main__item">
@@ -65,7 +65,7 @@ const Header = () => {
                         <span className='fz-14'>Додокойны</span>
                     </a>
                     <Button className='small gray' onClick={() => { }}>Войти</Button>
-                    
+
                 </div>
             </header>
             <nav className='header-nav__category'>
@@ -87,13 +87,10 @@ const Header = () => {
                 </nav>
                 <div className="header-nav__basket">
                     <Button className='medium orange' onClick={() => { }}>Корзина</Button>
-                   
+
                 </div>
-
-
-
             </nav>
-            
+            <Modal className='login'>Вход на сайт</Modal>
         </div>
     )
 }
