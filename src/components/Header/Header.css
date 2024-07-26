@@ -20,6 +20,7 @@
 
 .nav-main__item a {
     font-size: 0.8rem;
+    font-weight: 650;
 
 }
 
@@ -95,7 +96,7 @@
 
 .header-nav__list li {
     font-size: 14px;
-    font-weight: 600;
+    font-weight: 630;
     padding: 22px 0px;
     line-height: 1;
     transition: all 0.25s;
