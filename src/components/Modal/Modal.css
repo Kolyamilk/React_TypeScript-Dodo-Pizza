@@ -6,13 +6,11 @@
     right: 0;
     left: 0;
     bottom: 0;
+    z-index: 1000;
 }
-
 .login {
-
     position: absolute;
-
-
+    z-index: 1000;
     display: flex;
     align-items: start;
     flex-direction: column;
@@ -24,7 +22,6 @@
     left: 50%;
     transform: translate(-50%, -50%);
 }
-
 h1 {
     margin: 0px 0px 8px;
 }

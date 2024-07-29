@@ -1,12 +1,15 @@
-import { useState } from 'react'
+
 
 import './App.css'
 import Header from './components/Header/Header'
-import Modal from './components/Modal/Modal'
+import StoriesList from './components/StoriesList/StoriesList'
+
 function App() {
   return (
     <>
       <Header />
+      <StoriesList />
+
     </>
   )
 }
