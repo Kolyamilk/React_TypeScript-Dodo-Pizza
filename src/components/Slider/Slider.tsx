@@ -19,8 +19,6 @@ const Slider = () => {
         speed: 100,
         prevArrow: <SamplePrevArrow />,
         nextArrow: <SampleNextArrow />
-
-
     };
     return (
         <>
