@@ -2,7 +2,10 @@
 
     margin: 0 auto;
 
+
+
 }
+
 
 .slider-wrap {
     margin-top: 40px;
@@ -11,10 +14,11 @@
 .slider-item {
     display: flex;
     flex-direction: column;
-
 }
 
-.slider-item__image {}
+.slider-item__image {
+
+}
 
 .slider-item__image img {
     margin-right: 50px;
@@ -23,6 +27,7 @@
     border-radius: 20px;
 
 }
-.slider-item__image img:hover{
+
+.slider-item__image img:hover {
     cursor: pointer;
 }
