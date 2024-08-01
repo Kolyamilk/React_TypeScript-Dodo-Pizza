@@ -4,6 +4,9 @@
     align-items: center;
 
 }
+.popular_title{
+    font-weight: 600;
+}
 
 .popular_block article {
     background: rgb(255, 255, 255);
@@ -17,7 +20,7 @@
     padding: 16px;
     margin-right: 24px;
     transition: all 350ms;
-    cursor: pointer;
+
     align-items: center;
     justify-content: center;
 

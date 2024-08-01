@@ -3,7 +3,7 @@ import './PopularList.css'
 const PopularList = () => {
     return (
         <section>
-            <h2 className='popular_title'>Популярные товары</h2>
+            <h2 className='popular_title'>Часто заказывают</h2>
             <div className='popular_block'>
                 <article>
                     <picture >
@@ -34,7 +34,7 @@ const PopularList = () => {
                         <div >
                             <span>
                                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" preserveAspectRatio="none" viewBox="0 0 75 10" className="discount">
-                                    <path stroke="#FF6900" stroke-width="2" d="M1 9c7.346-1.833 34.434-7.5 73-8" opacity="0.55">
+                                    <path stroke="#FF6900" strokeWidth="2" d="M1 9c7.346-1.833 34.434-7.5 73-8" opacity="0.55">
                                     </path>
                                 </svg>
                                 1&nbsp;697 ₽
@@ -53,7 +53,7 @@ const PopularList = () => {
                         <div className="">
                             <span>
                                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" preserveAspectRatio="none" viewBox="0 0 75 10" className="discount">
-                                    <path stroke="#FF6900" stroke-width="2" d="M1 9c7.346-1.833 34.434-7.5 73-8" opacity="0.55">
+                                    <path stroke="#FF6900" strokeWidth="2" d="M1 9c7.346-1.833 34.434-7.5 73-8" opacity="0.55">
                                     </path>
                                 </svg>
                                 1&nbsp;697 ₽
