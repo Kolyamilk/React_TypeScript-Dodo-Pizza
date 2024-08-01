@@ -1,6 +1,6 @@
 import React from 'react';
 import Button from '../Button/Button';
-import Menu from '../menu/menu';
+import Menu from '../../data/menu';
 import './Catalog.css'
 interface ButtonProps {
     children?: string;
