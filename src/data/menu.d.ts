@@ -7,9 +7,10 @@ export interface Pizza {
 
 export interface Combo {
     name: string;
-    price: string;
+    price: number;
+    priceOld: number;
     img: string;
-    ingredients: string[];
+    description: string;
 }
 
 export interface Snack {

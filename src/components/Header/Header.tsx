@@ -68,7 +68,7 @@ const Header = () => {
 
                 </div>
             </header>
-            <nav className='header-nav__category'>
+            <nav className='header-nav__category fixed'>
                 <nav className="header-nav__category">
 
                     <ul className='header-nav__list flex'>

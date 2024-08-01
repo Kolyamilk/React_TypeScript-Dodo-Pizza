@@ -2,13 +2,15 @@ button {
     border: none;
     border-radius: 9999px;
     cursor: pointer;
-    
+
+
 }
 
 .small {
     height: 32px;
     padding: 8px 16px;
     font-size: 14px;
+    font-weight: 550;
     line-height: 16px;
 }
 
@@ -17,13 +19,26 @@ button {
     padding: 8px 20px;
     font-size: 16px;
     line-height: 24px;
+    font-weight: 500;
 }
-.big{
+
+.big {
     height: 48px;
     padding: 12px 24px;
     font-size: 16px;
     line-height: 24px;
+    font-weight: 500;
     width: 100%;
+}
+
+.opacity {
+    background-color: rgb(255, 240, 230);
+    color: rgb(209, 87, 0);
+    transition: all 0.2s;
+}
+
+.opacity:hover {
+    background-color: rgb(255, 220, 196);
 }
 
 .orange {

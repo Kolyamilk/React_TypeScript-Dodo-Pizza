@@ -28,16 +28,19 @@
     color: rgb(92, 99, 112);
     font-weight: 400;
 }
-.product-img img{
+
+.product-img img {
     cursor: pointer;
     width: 95%;
     margin: 5% 0px 0px 5%;
     transition: all 0.2s;
-}
-.product-img img:hover{
-    transform: translateY(5px)
 
 }
+
+.product-img img:hover {
+    transform: translateY(3px)
+}
+
 .product-title a {
     margin: 8px 0px;
     color: rgb(0, 0, 0);
@@ -47,14 +50,15 @@
     font-weight: 500;
 }
 
-.product-price {
+.product-price__block {
     margin-top: 16px;
     display: flex;
     -webkit-box-pack: justify;
     justify-content: space-between;
 }
 
-.product-price div {
+.product-price__block div {
+    position: relative;
     flex: 0 1 auto;
     padding-right: 4px;
     font-size: 20px;
@@ -68,6 +72,14 @@
     justify-content: center;
 }
 
+.product-price__block svg {
+    position: absolute;
+    width: 110%;
+    height: 80%;
+    left: -5%;
+    bottom: 0%;
+}
+
 .item {
     margin: 0px;
     width: 100%;
@@ -76,4 +88,10 @@
     font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
     color: rgb(92, 99, 112);
     font-weight: 400;
+}
+
+.priceOld__control span {
+    font-size: 14px;
+    line-height: 18px;
+    color: rgb(92, 99, 112);
 }
