@@ -24,17 +24,23 @@ const PopularList = () => {
                     </div>
                 </article>
                 <article>
+
                     <picture >
                         <img alt="Додстер" title="Додстер" className="img" src="https://media.dodostatic.net/image/r:292x292/11EE796F96D11392A2F6DD73599921B9.jpg" />
                     </picture>
                     <div className='popular-item__desc'>
                         <h2 >3 пиццы</h2>
                         1&nbsp;239 ₽
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" preserveAspectRatio="none" viewBox="0 0 75 10" className="discount">
-                            <path stroke="#FF6900" stroke-width="2" d="M1 9c7.346-1.833 34.434-7.5 73-8" opacity="0.55">
-                            </path>
-                        </svg>
-                        1&nbsp;697 ₽
+                        <div >
+                            <span>
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" preserveAspectRatio="none" viewBox="0 0 75 10" className="discount">
+                                    <path stroke="#FF6900" stroke-width="2" d="M1 9c7.346-1.833 34.434-7.5 73-8" opacity="0.55">
+                                    </path>
+                                </svg>
+                                1&nbsp;697 ₽
+                            </span>
+                        </div>
+
                     </div>
                 </article>
                 <article>
@@ -44,13 +50,19 @@ const PopularList = () => {
                     <div className='popular-item__desc'>
                         <h2 >2 соуса</h2>
                         1&nbsp;239 ₽
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" preserveAspectRatio="none" viewBox="0 0 75 10" className="discount">
-                            <path stroke="#FF6900" stroke-width="2" d="M1 9c7.346-1.833 34.434-7.5 73-8" opacity="0.55">
-                            </path>
-                        </svg>
-                        1&nbsp;697 ₽
+                        <div className="">
+                            <span>
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" preserveAspectRatio="none" viewBox="0 0 75 10" className="discount">
+                                    <path stroke="#FF6900" stroke-width="2" d="M1 9c7.346-1.833 34.434-7.5 73-8" opacity="0.55">
+                                    </path>
+                                </svg>
+                                1&nbsp;697 ₽
+                            </span>
+                        </div>
                     </div>
+
                 </article>
+
             </div>
         </section>
     )

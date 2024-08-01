@@ -16,8 +16,10 @@
     height: 97px;
     padding: 16px;
     margin-right: 24px;
-    transition: all 150ms;
+    transition: all 350ms;
     cursor: pointer;
+    align-items: center;
+    justify-content: center;
 
 }
 
@@ -37,18 +39,28 @@
 .popular-item__desc {
     flex: 1 1 auto;
     display: flex;
-
+    width: 100%;
     flex-flow: column;
     -webkit-box-pack: center;
-    justify-content: center;
+
     margin-left: 8px;
     font-weight: 500;
+
+}
+
+.popular-item__desc div {
+    margin-top: 2px;
+}
+
+.popular-item__desc span {
+    position: relative;
 
 }
 
 .popular-item__desc h2 {
     font-size: 16px;
     font-weight: 500;
+    margin-bottom: 2px;
 }
 
 .popular-item__price {
@@ -57,8 +69,8 @@
 
 .popular-item__desc svg {
     position: absolute;
-    width: 30%;
-    height: 25%;
-    left: 0%;
-    bottom: 40%;
+    width: 110%;
+    height: 80%;
+    left: -5%;
+    bottom: 0%;
 }
