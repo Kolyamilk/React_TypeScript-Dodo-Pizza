@@ -13,7 +13,6 @@ interface Pizza {
     price: number;
     ingredients: string[];
 }
-
 const Catalog: React.FC<ButtonProps> = ({ children }) => {
     return (
         <main>
