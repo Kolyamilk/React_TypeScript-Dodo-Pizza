@@ -60,6 +60,64 @@ const Catalog: React.FC<ButtonProps> = () => {
                     </article>
                 ))}
             </section>
+            <section className='catalog-pizza'>
+                <h2 className='title'>Закуски</h2>
+                {Menu.Snacks.map((item, key: number) => (
+                    <article key={key} className='product-block'>
+                        <main className='product-block__desc'>
+                            <picture className='product-img'><img src={item.img} alt={item.name} /></picture>
+                            <div className="product-title">
+                                <a href="">{item.name}</a>
+                            </div>
+                            {item.description}
+                        </main>
+                        <footer className='product-price__block'>
+                            <div className='price__control'>
+                                {item.price} ₽
+                                <div className='priceOld__control'>
+                                    <span>
+                                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" preserveAspectRatio="none" viewBox="0 0 75 10" className="discount">
+                                            <path stroke="#FF6900" strokeWidth="2" d="M1 9c7.346-1.833 34.434-7.5 73-8" opacity="0.55">
+                                            </path>
+                                        </svg>
+
+                                    </span>
+                                </div>
+                            </div>
+                            <Button type='submit' className='medium opacity' onClick={() => { }}>Выбрать</Button>
+                        </footer>
+                    </article>
+                ))}
+            </section>
+            <section className='catalog-pizza'>
+                <h2 className='title'>Закуски</h2>
+                {Menu.Cocktails.map((item, key: number) => (
+                    <article key={key} className='product-block'>
+                        <main className='product-block__desc'>
+                            <picture className='product-img'><img src={item.img} alt={item.name} /></picture>
+                            <div className="product-title">
+                                <a href="">{item.name}</a>
+                            </div>
+                            {item.description}
+                        </main>
+                        <footer className='product-price__block'>
+                            <div className='price__control'>
+                                {item.price} ₽
+                                <div className='priceOld__control'>
+                                    <span>
+                                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" preserveAspectRatio="none" viewBox="0 0 75 10" className="discount">
+                                            <path stroke="#FF6900" strokeWidth="2" d="M1 9c7.346-1.833 34.434-7.5 73-8" opacity="0.55">
+                                            </path>
+                                        </svg>
+
+                                    </span>
+                                </div>
+                            </div>
+                            <Button type='submit' className='medium opacity' onClick={() => { }}>В корзину</Button>
+                        </footer>
+                    </article>
+                ))}
+            </section>
         </main >
     );
 }

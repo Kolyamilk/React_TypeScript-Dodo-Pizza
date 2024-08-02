@@ -6,7 +6,7 @@ import './Header.css'
 const Header = () => {
     const [modalLogin, setModalLogin] = useState(false)
     return (
-        <div className='header'>
+        <>
             <div className='header-nav'>
                 <nav className='header-nav__main'>
                     <li className="nav-main__item">
@@ -68,7 +68,7 @@ const Header = () => {
 
                 </div>
             </header>
-            <nav className='header-nav__category fixed'>
+            <nav className='header-nav__category '>
                 <nav className="header-nav__category">
 
                     <ul className='header-nav__list flex'>
@@ -95,7 +95,7 @@ const Header = () => {
             {modalLogin && <Modal className='login' onClose={() => setModalLogin(false)} >Вход на сайт</Modal>}
 
 
-        </div>
+        </>
     )
 }
 export default Header

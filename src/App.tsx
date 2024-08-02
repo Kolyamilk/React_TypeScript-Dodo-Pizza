@@ -8,13 +8,13 @@ import StoriesList from './components/StoriesList/StoriesList'
 
 function App() {
   return (
-    <>
+    <div className='app'>
       <Header />
       <StoriesList />
       <PopularList />
       <Catalog>Пиццы</Catalog>
 
-    </>
+    </div>
   )
 }
 export default App

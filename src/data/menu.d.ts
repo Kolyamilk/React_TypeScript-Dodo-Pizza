@@ -15,15 +15,22 @@ export interface Combo {
 
 export interface Snack {
     name: string;
-    price: string;
+    price: number;
     img: string;
-    ingredients: string[];
+    description: string;
+}
+export interface Cocktails {
+    name: string;
+    price: number;
+    img: string;
+    description: string;
 }
 
 export interface Menu {
     Pizza: Pizza[];
     Combo: Combo[];
     Snacks: Snack[];
+    Cocktails: Cocktails[];
 }
 
 declare const menu: Menu;
