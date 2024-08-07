@@ -3,6 +3,8 @@ export interface Pizza {
     price: number;
     img: string;
     ingredients: string[];
+
+
 }
 
 export interface Combo {
