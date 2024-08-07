@@ -25,12 +25,19 @@ export interface Cocktails {
     img: string;
     description: string;
 }
+export interface Coffee {
+    name: string;
+    price: number;
+    img: string;
+    description: string;
+}
 
 export interface Menu {
     Pizza: Pizza[];
     Combo: Combo[];
     Snacks: Snack[];
     Cocktails: Cocktails[];
+    Coffee: Coffee[]
 }
 
 declare const menu: Menu;

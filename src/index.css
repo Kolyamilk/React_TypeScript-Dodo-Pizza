@@ -6,7 +6,7 @@
 }
 
 a {
-  
+
     color: #000000;
     text-decoration: inherit;
     transition: all 0.3s;
@@ -23,9 +23,11 @@ li {
 .dodoColor {
     color: rgb(255, 105, 0);
 }
-.fz-12{
+
+.fz-12 {
     font-size: 12px;
 }
+
 .fz-14 {
     font-size: 14px;
 }
@@ -37,4 +39,8 @@ li {
 
 .flex {
     display: flex;
+}
+
+.none {
+    display: none;
 }

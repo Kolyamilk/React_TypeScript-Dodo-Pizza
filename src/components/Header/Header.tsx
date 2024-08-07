@@ -1,10 +1,28 @@
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import Button from '../Button/Button'
 import Modal from '../Modal/Modal'
 import './Header.css'
 
 const Header = () => {
     const [modalLogin, setModalLogin] = useState(false)
+
+    useEffect(() => {
+        const handleScroll = () => {
+            const headerNav = document.querySelector('.header-nav__category');
+            if (headerNav) {
+                if (window.scrollY > 175) {
+                    headerNav.classList.add('fixed');
+                } else {
+                    headerNav.classList.remove('fixed');
+                }
+            }
+        };
+        window.addEventListener('scroll', handleScroll);
+        return () => {
+            window.removeEventListener('scroll', handleScroll);
+        };
+    }, []);
+
     return (
         <>
             <div className='header-nav'>
@@ -23,7 +41,7 @@ const Header = () => {
                     </li>
                 </nav>
             </div>
-            <header className='header-main'>
+            <header className='header-main '>
                 <div className="header-left">
                     <div className="header-left__logo">
                         <a href="/" className='svg-logo'>
@@ -69,32 +87,48 @@ const Header = () => {
                 </div>
             </header>
             <nav className='header-nav__category '>
-                <nav className="header-nav__category">
+                <div className="flex ">
+                    {/* <div className='header-nav__svg none'></div> */}
+                    <nav className='header-nav__list'>
+                        <ul className='list'>
+                            <li><a href='/'>Пицца</a></li>
+                            <li><a href='/'>Комбо</a></li>
+                            <li><a href='/'>Закуски</a></li>
+                            <li><a href='/'>Коктейли</a></li>
+                            <li><a href='/'>Кофе</a></li>
+                            <li><a href='/'>Напитки</a></li>
+                            <li><a href='/'>Десерты</a></li>
+                            <li><a href='/'>Любят дети</a></li>
+                            <li><a href='/'>Соусы</a></li>
+                            <li><a href='/'>Другие товары</a></li>
+                            <li><a href='/'>Акции</a></li>
+                        </ul>
+                    </nav>
 
-                    <ul className='header-nav__list flex'>
-                        <li><a href='/'>Пицца</a></li>
-                        <li><a href='/'>Комбо</a></li>
-                        <li><a href='/'>Закуски</a></li>
-                        <li><a href='/'>Коктейли</a></li>
-                        <li><a href='/'>Кофе</a></li>
-                        <li><a href='/'>Напитки</a></li>
-                        <li><a href='/'>Десерты</a></li>
-                        <li><a href='/'>Любят дети</a></li>
-                        <li><a href='/'>Соусы</a></li>
-                        <li><a href='/'>Другие товары</a></li>
-                        <li><a href='/'>Акции</a></li>
-                    </ul>
-                </nav>
+                    <div>
+                        <Button type='submit' className='medium orange' onClick={() => setModalLogin(true)}>Корзина</Button>
+                    </div>
+                </div>
+                {/* <ul className='header-nav__list flex'>
+                    <li><a href='/'>Пицца</a></li>
+                    <li><a href='/'>Комбо</a></li>
+                    <li><a href='/'>Закуски</a></li>
+                    <li><a href='/'>Коктейли</a></li>
+                    <li><a href='/'>Кофе</a></li>
+                    <li><a href='/'>Напитки</a></li>
+                    <li><a href='/'>Десерты</a></li>
+                    <li><a href='/'>Любят дети</a></li>
+                    <li><a href='/'>Соусы</a></li>
+                    <li><a href='/'>Другие товары</a></li>
+                    <li><a href='/'>Акции</a></li>
+                </ul>
+
                 <div className="header-nav__basket">
                     <Button type='submit' className='medium orange' onClick={() => setModalLogin(true)}>Корзина</Button>
 
-                </div>
+                </div> */}
             </nav>
-
-
             {modalLogin && <Modal className='login' onClose={() => setModalLogin(false)} >Вход на сайт</Modal>}
-
-
         </>
     )
 }

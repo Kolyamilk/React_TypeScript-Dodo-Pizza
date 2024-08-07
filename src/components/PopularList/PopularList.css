@@ -1,10 +1,16 @@
+.popular {
+    width: 1280px;
+    margin: 0 auto;
+}
+
 .popular_block {
     display: flex;
     justify-content: start;
     align-items: center;
 
 }
-.popular_title{
+
+.popular_title {
     font-weight: 600;
 }
 

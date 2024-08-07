@@ -2,7 +2,7 @@ import React from 'react'
 import './PopularList.css'
 const PopularList = () => {
     return (
-        <section>
+        <section className='popular'>
             <h2 className='popular_title'>Часто заказывают</h2>
             <div className='popular_block'>
                 <article>

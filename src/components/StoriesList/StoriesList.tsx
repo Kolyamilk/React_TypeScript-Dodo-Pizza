@@ -9,7 +9,7 @@ const StoriesList = () => {
         <section className='stories-list-wrapper'>
 
             <Slider />
-         
+
         </section>
     );
 }
