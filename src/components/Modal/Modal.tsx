@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 import './Modal.css'
 import Button from '../Button/Button';
 
@@ -17,6 +17,13 @@ const Modal: React.FC<ButtonProps> = ({ children, className, onClose }) => {
     const submitHandler = (event: React.FormEvent) => {
         event.preventDefault()
     }
+    //убрать прокрутку заднего фона при открытии модалки
+    useEffect(() => {
+        document.body.classList.add('modal-open');
+        return () => {
+            document.body.classList.remove('modal-open');
+        };
+    }, []);
 
     return (
         <>

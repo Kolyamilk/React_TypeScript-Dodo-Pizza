@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useState } from 'react';
 import Button from '../Button/Button';
 import Menu, { Pizza } from '../../data/menu';
 import ModalProduct from '../Modal/ModalProduct';
@@ -9,6 +9,8 @@ interface ButtonProps {
 }
 
 const Catalog: React.FC<ButtonProps> = () => {
+
+
     const [modalProduct, setModalProduct] = useState(false)
     const [selectedProduct, setSelectedProduct] = useState<Pizza | null>(null);
     return (
@@ -20,7 +22,7 @@ const Catalog: React.FC<ButtonProps> = () => {
                         onClick={() => {
                             setSelectedProduct(item);
                             setModalProduct(true)
-                            console.log(selectedProduct);
+                          
                         }}
                         onChange={() => { }}>
                         <main className='product-block__desc'>
@@ -32,7 +34,6 @@ const Catalog: React.FC<ButtonProps> = () => {
                             {item.ingredients.map((ingredient, index) => (
                                 <p key={index}>{ingredient}</p>
                             ))}
-                           
                         </main>
                         <footer className='product-price__block'>
                             <div>от {item.price} ₽</div>

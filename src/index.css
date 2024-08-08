@@ -44,3 +44,9 @@ li {
 .none {
     display: none;
 }
+
+.modal-open {
+
+    overflow: hidden;
+
+}

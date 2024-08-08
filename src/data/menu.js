@@ -3,58 +3,140 @@ const menu = {
         {
             type: "Пицца",
             name: "Мясная с аджикой",
+            img: "https://media.dodostatic.net/image/r:584x584/11EF438E8FA58DA88AC1B2370F02A4D4.avif",
+            ingredients: ["Баварские колбаски, острый соус аджика, острые колбаски чоризо, цыпленок, пикантная пепперони, моцарелла, фирменный томатный соус"],
             price: 549,
-            img: "https://media.dodostatic.net/image/r:292x292/11EF438E93884BFEBFE79D11095AE2D4.avif",
-            ingredients: ["Баварские колбаски, острый соус аджика, острые колбаски чоризо, цыпленок, пикантная пепперони, моцарелла, фирменный томатный соус"]
-        },
-        {
-            type: "Пицца",
-            name: "Бефстроганов",
-            price: 549,
-            img: "https://media.dodostatic.net/image/r:584x584/11EEF9E4417B796B852CA22778AB59F7.avif",
-            ingredients: ["Пряная говядина, шампиньоны, ароматный грибной соус, маринованные огурчики, моцарелла, красный лук, фирменный соус альфредо"]
-        },
-        {
-            type: "Пицца",
-            name: "Мясная с аджикой",
-            price: 549,
-            img: "https://media.dodostatic.net/image/r:292x292/11EF438E93884BFEBFE79D11095AE2D4.avif",
-            ingredients: ["Баварские колбаски, острый соус аджика, острые колбаски чоризо, цыпленок, пикантная пепперони, моцарелла, фирменный томатный соус"]
-        },
-        {
-            type: "Пицца",
-            name: "Мясная с аджикой",
-            price: 549,
-            img: "https://media.dodostatic.net/image/r:292x292/11EF438E93884BFEBFE79D11095AE2D4.avif",
-            ingredients: ["Баварские колбаски, острый соус аджика, острые колбаски чоризо, цыпленок, пикантная пепперони, моцарелла, фирменный томатный соус"]
-        },
-        {
-            type: "Пицца",
-            name: "Мясная с аджикой",
-            price: 549,
-            img: "https://media.dodostatic.net/image/r:292x292/11EF438E93884BFEBFE79D11095AE2D4.avif",
-            ingredients: ["Баварские колбаски, острый соус аджика, острые колбаски чоризо, цыпленок, пикантная пепперони, моцарелла, фирменный томатный соус"]
-        },
-        {
-            type: "Пицца",
-            name: "Мясная с аджикой",
-            price: 549,
-            img: "https://media.dodostatic.net/image/r:292x292/11EF438E93884BFEBFE79D11095AE2D4.avif",
-            ingredients: ["Баварские колбаски, острый соус аджика, острые колбаски чоризо, цыпленок, пикантная пепперони, моцарелла, фирменный томатный соус"]
-        },
-        {
-            type: "Пицца",
-            name: "Мясная с аджикой",
-            price: 549,
-            img: "https://media.dodostatic.net/image/r:292x292/11EF438E93884BFEBFE79D11095AE2D4.avif",
-            ingredients: ["Баварские колбаски, острый соус аджика, острые колбаски чоризо, цыпленок, пикантная пепперони, моцарелла, фирменный томатный соус"]
-        },
-        {
-            type: "Пицца",
-            name: "Мясная с аджикой",
-            price: 549,
-            img: "https://media.dodostatic.net/image/r:292x292/11EF438E93884BFEBFE79D11095AE2D4.avif",
-            ingredients: ["Баварские колбаски, острый соус аджика, острые колбаски чоризо, цыпленок, пикантная пепперони, моцарелла, фирменный томатный соус"]
+            small: [
+                {
+                    img: "https://media.dodostatic.net/image/r:584x584/11EF438E8FA58DA88AC1B2370F02A4D4.avif",
+                    ingredients: ["Баварские колбаски, острый соус аджика, острые колбаски чоризо, цыпленок, пикантная пепперони, моцарелла, фирменный томатный соус"],
+                    price: 549,
+                    raidus: 25,
+                    dough: 'традиционное тесто 25',
+                    weight: 410,
+                    thinDough: false,
+                    addToTast: [
+                        {
+                            img: 'https://cdn.dodostatic.net/static/Img/Ingredients/cdea869ef287426386ed634e6099a5ba.png',
+                            name: 'Сливочная моцарелла',
+                            price: 59
+                        },
+                        {
+                            img: 'https://cdn.dodostatic.net/static/Img/Ingredients/000D3A22FA54A81411E9AFA69C1FE796',
+                            name: 'Сыры чеддер и пармезан',
+                            price: 59
+                        },
+                        {
+                            img: 'https://cdn.dodostatic.net/static/Img/Ingredients/11ee95b6bfdf98fb88a113db92d7b3df.png',
+                            name: 'Острый перец халапеньо',
+                            price: 49
+                        },
+                        {
+                            img: 'https://cdn.dodostatic.net/static/Img/Ingredients/000D3A39D824A82E11E9AFA5B328D35A',
+                            name: 'Нежный цыпленок',
+                            price: 59
+                        },
+                        {
+                            img: 'https://cdn.dodostatic.net/static/Img/Ingredients/000D3A22FA54A81411E9AFA67259A324',
+                            name: 'Шампиньоны',
+                            price: 49
+                        },
+                        {
+                            img: 'https://cdn.dodostatic.net/static/Img/Ingredients/000D3A39D824A82E11E9AFA637AAB68F',
+                            name: 'Бекон',
+                            price: 59
+                        },
+                    ]
+                }
+            ],
+            medium: [
+                {
+                    img: "https://media.dodostatic.net/image/r:584x584/11EF438E93884BFEBFE79D11095AE2D4.avif",
+                    ingredients: ["Баварские колбаски, острый соус аджика, острые колбаски чоризо, цыпленок, пикантная пепперони, моцарелла, фирменный томатный соус"],
+                    price: 819,
+                    raidus: 30,
+                    dough: 'традиционное тесто 30',
+                    weight: 570,
+                    thinDough: true,
+                    addToTast: [
+                        {
+                            img: 'https://cdn.dodostatic.net/static/Img/Ingredients/cdea869ef287426386ed634e6099a5ba.png',
+                            name: 'Сливочная моцарелла',
+                            price: 59
+                        },
+                        {
+                            img: 'https://cdn.dodostatic.net/static/Img/Ingredients/000D3A22FA54A81411E9AFA69C1FE796',
+                            name: 'Сыры чеддер и пармезан',
+                            price: 59
+                        },
+                        {
+                            img: 'https://cdn.dodostatic.net/static/Img/Ingredients/11ee95b6bfdf98fb88a113db92d7b3df.png',
+                            name: 'Острый перец халапеньо',
+                            price: 49
+                        },
+                        {
+                            img: 'https://cdn.dodostatic.net/static/Img/Ingredients/000D3A39D824A82E11E9AFA5B328D35A',
+                            name: 'Нежный цыпленок',
+                            price: 59
+                        },
+                        {
+                            img: 'https://cdn.dodostatic.net/static/Img/Ingredients/000D3A22FA54A81411E9AFA67259A324',
+                            name: 'Шампиньоны',
+                            price: 49
+                        },
+                        {
+                            img: 'https://cdn.dodostatic.net/static/Img/Ingredients/000D3A39D824A82E11E9AFA637AAB68F',
+                            name: 'Бекон',
+                            price: 59
+                        },
+                    ]
+                }
+            ],
+            big: [
+                {
+                    img: "https://media.dodostatic.net/image/r:584x584/11EF438E9DE514FB9742C94B62F9AA66.avif",
+                    ingredients: ["Баварские колбаски, острый соус аджика, острые колбаски чоризо, цыпленок, пикантная пепперони, моцарелла, фирменный томатный соус"],
+                    price: 999,
+                    raidus: 35,
+                    dough: 'традиционное тесто 35',
+                    weight: 770,
+                    thinDough: true,
+                    addToTast: [
+                        {
+                            img: 'https://cdn.dodostatic.net/static/Img/Ingredients/cdea869ef287426386ed634e6099a5ba.png',
+                            name: 'Сливочная моцарелла',
+                            price: 59
+                        },
+                        {
+                            img: 'https://cdn.dodostatic.net/static/Img/Ingredients/000D3A22FA54A81411E9AFA69C1FE796',
+                            name: 'Сыры чеддер и пармезан',
+                            price: 59
+                        },
+                        {
+                            img: 'https://cdn.dodostatic.net/static/Img/Ingredients/11ee95b6bfdf98fb88a113db92d7b3df.png',
+                            name: 'Острый перец халапеньо',
+                            price: 49
+                        },
+                        {
+                            img: 'https://cdn.dodostatic.net/static/Img/Ingredients/000D3A39D824A82E11E9AFA5B328D35A',
+                            name: 'Нежный цыпленок',
+                            price: 59
+                        },
+                        {
+                            img: 'https://cdn.dodostatic.net/static/Img/Ingredients/000D3A22FA54A81411E9AFA67259A324',
+                            name: 'Шампиньоны',
+                            price: 49
+                        },
+                        {
+                            img: 'https://cdn.dodostatic.net/static/Img/Ingredients/000D3A39D824A82E11E9AFA637AAB68F',
+                            name: 'Бекон',
+                            price: 59
+                        },
+                    ]
+
+                }
+            ],
+
         }
     ],
     Combo: [
