@@ -12,10 +12,12 @@ const menu = {
                     ingredients: ["Баварские колбаски, острый соус аджика, острые колбаски чоризо, цыпленок, пикантная пепперони, моцарелла, фирменный томатный соус"],
                     price: 549,
                     raidus: 25,
+                    width: '35%',
+                    heigtht: '55%',
                     dough: 'традиционное тесто 25',
                     weight: 410,
                     thinDough: false,
-                    addToTast: [
+                    addToTaste: [
                         {
                             img: 'https://cdn.dodostatic.net/static/Img/Ingredients/cdea869ef287426386ed634e6099a5ba.png',
                             name: 'Сливочная моцарелла',
@@ -55,10 +57,12 @@ const menu = {
                     ingredients: ["Баварские колбаски, острый соус аджика, острые колбаски чоризо, цыпленок, пикантная пепперони, моцарелла, фирменный томатный соус"],
                     price: 819,
                     raidus: 30,
+                    width: '45%',
+                    heigtht: '75%',
                     dough: 'традиционное тесто 30',
                     weight: 570,
                     thinDough: true,
-                    addToTast: [
+                    addToTaste: [
                         {
                             img: 'https://cdn.dodostatic.net/static/Img/Ingredients/cdea869ef287426386ed634e6099a5ba.png',
                             name: 'Сливочная моцарелла',
@@ -98,10 +102,12 @@ const menu = {
                     ingredients: ["Баварские колбаски, острый соус аджика, острые колбаски чоризо, цыпленок, пикантная пепперони, моцарелла, фирменный томатный соус"],
                     price: 999,
                     raidus: 35,
+                    width: '55%',
+                    heigtht: '85%',
                     dough: 'традиционное тесто 35',
                     weight: 770,
                     thinDough: true,
-                    addToTast: [
+                    addToTaste: [
                         {
                             img: 'https://cdn.dodostatic.net/static/Img/Ingredients/cdea869ef287426386ed634e6099a5ba.png',
                             name: 'Сливочная моцарелла',

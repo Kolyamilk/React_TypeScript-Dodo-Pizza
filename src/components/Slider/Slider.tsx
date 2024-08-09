@@ -31,9 +31,6 @@ const Slider = () => {
                     </div>
                 ))}
             </SlickSlider >
-
-
-
             {/* <div className="slider">
                 <div className="slider-wrap">
                     {image.map((image, index) => (

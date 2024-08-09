@@ -4,6 +4,8 @@ export interface Pizza {
     img: string;
     ingredients: string[];
     price: number;
+    width:string;
+    height:string;
     small?: PizzaSize[];
     medium?: PizzaSize[];
     big?: PizzaSize[];
