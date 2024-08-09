@@ -4,13 +4,16 @@ export interface Pizza {
     img: string;
     ingredients: string[];
     price: number;
-    width:string;
-    height:string;
+    width: string;
+    height: string;
     small?: PizzaSize[];
     medium?: PizzaSize[];
     big?: PizzaSize[];
+    addToTaste: PizzaAddition[];
 }
 export interface PizzaSize {
+    width: string;
+    height: string;
     img: string;
     ingredients: string[];
     price: number;
@@ -18,7 +21,7 @@ export interface PizzaSize {
     dough: string;
     weight: number;
     thinDough: boolean;
-    addToTaste: PizzaAddition[];
+    
 }
 export interface PizzaAddition {
     img: string;

@@ -13,7 +13,7 @@ const menu = {
                     price: 549,
                     raidus: 25,
                     width: '35%',
-                    heigtht: '55%',
+                    heigtht: '65%',
                     dough: 'традиционное тесто 25',
                     weight: 410,
                     thinDough: false,
@@ -143,7 +143,7 @@ const menu = {
                 }
             ],
 
-        }
+        },
     ],
     Combo: [
         {

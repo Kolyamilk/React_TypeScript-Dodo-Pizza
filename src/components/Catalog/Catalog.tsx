@@ -1,16 +1,13 @@
 import React, { useState } from 'react';
 import Button from '../Button/Button';
-import Menu, { Pizza } from '../../data/menu';
+import Menu, { Pizza, Combo } from '../../data/menu';
 import ModalProduct from '../Modal/ModalProduct';
 import './Catalog.css'
 interface ButtonProps {
     children?: string;
     className?: string;
 }
-
 const Catalog: React.FC<ButtonProps> = () => {
-
-
     const [modalProduct, setModalProduct] = useState(false)
     const [selectedProduct, setSelectedProduct] = useState<Pizza | null>(null);
     return (
@@ -22,7 +19,6 @@ const Catalog: React.FC<ButtonProps> = () => {
                         onClick={() => {
                             setSelectedProduct(item);
                             setModalProduct(true)
-                          
                         }}
                         onChange={() => { }}>
                         <main className='product-block__desc'>
@@ -30,7 +26,6 @@ const Catalog: React.FC<ButtonProps> = () => {
                             <div className="product-title">
                                 <a href="">{item.name}</a>
                             </div>
-                          
                             {item.ingredients.map((ingredient, index) => (
                                 <p key={index}>{ingredient}</p>
                             ))}
@@ -46,6 +41,7 @@ const Catalog: React.FC<ButtonProps> = () => {
                 <h2 className='title'>Комбо</h2>
                 {Menu.Combo.map((item, key: number) => (
                     <article key={key} className='product-block'>
+
                         <main className='product-block__desc'>
                             <picture className='product-img'><img src={item.img} alt={item.name} /></picture>
                             <div className="product-title">
